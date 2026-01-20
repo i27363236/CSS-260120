@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Icon</title>
+    <style>
+        .menu {
+            position: relative;
+            width: 3em;
+            height: 3em;
+            background-color:rgb(252, 49, 83);
+            border: 1em solid pink;
+            cursor: pointer;
+            margin: auto;
+        }
+        .menu::after{
+            content: "";
+            width: 1em;
+            height: 0.2em;
+            border-top: 0.6em double #fff;
+            border-bottom: 0.2em solid #fff;
+            top: calc((3em - 1em) / 2);
+            left: calc((3em - 1em) / 2);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu"></div>
+</body>
+</html>

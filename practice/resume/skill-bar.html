@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKill_Bar</title>
+    <style>
+        .skill-list{
+            list-style: none;
+            padding: 0;
+        }
+        .skill-list li{
+            display: flex;
+            height: 35px;
+        }
+        .skill-name{
+            font-size: 1.3em;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: #6e6e6e;
+            width: 180px;
+        }
+        .skill-bar{
+            display: block;
+            width: 250px;
+            height: 23px;
+            background-color: rgb(175, 175, 175);
+            border-radius: 5em;
+            box-shadow: -2px 2px 4px #6e6e6e inset;
+            
+        }
+        .skill-level{
+            height: 97%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .skill-produce{
+            width: 95%;
+            background-image: linear-gradient(to right top, #8127e3, #b853df, #dc81df, #f3b1e6, #ffe3f4);
+            animation: ani-produce 1.5s 1 alternate;
+        }
+        .skill-vocal{
+            width: 85%;
+            background-image: linear-gradient(to right top, #8ac231, #aecd54, #cdd977, #e8e69a, #fdf4bf);
+            animation: ani-vocal 1.5s 1 alternate;
+        }
+        .skill-rap{
+            width: 90%;
+            background-image: linear-gradient(to right top, #cfa84f, #dabc68, #e6d182, #f2e59c, #fff9b7);
+            animation: ani-rap 1.5s 1 alternate;
+        }
+        .skill-dance{
+            width: 85%;
+            background-image: linear-gradient(to right top, #99589f, #ba73a8, #d590b4, #ecb0c4, #ffd1d9);
+            animation: ani-dance 1.5s 1 alternate;
+        }
+        .skill-tw{
+            width: 100%;
+            background-image: linear-gradient(to right top, #e39127, #eba348, #f2b466, #f9c583, #ffd6a1);
+            animation: ani-tw 1.5s 1 alternate;
+        }
+        @keyframes ani-produce{
+            from{
+                width: 0;
+            }
+            to{
+                width: 95%;
+            }
+        }
+        @keyframes ani-vocal{
+            from{
+                width: 0;
+            }
+            to{
+                width: 85%;
+            }
+        }
+        @keyframes ani-rap{
+            from{
+                width: 0;
+            }
+            to{
+                width: 90%;
+            }
+        }
+        @keyframes ani-dance{
+            from{
+                width: 0;
+            }
+            to{
+                width: 85%;
+            }
+        }
+        @keyframes ani-tw{
+            from{
+                width: 0;
+            }
+            to{
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="skill-box">
+        <h3>Skills</h3>
+        <ul class="skill-list">
+            <li>
+                <span class="skill-name">Produce</span>
+                <span class="skill-bar">
+                    <span class="skill-level skill-produce">95%</span>
+                </span>
+            </li>
+            <li>
+                <span class="skill-name">Vocal</span>
+                <span class="skill-bar">
+                    <span class="skill-level skill-vocal">85%</span>
+                </span>
+            </li>
+            <li>
+                <span class="skill-name">Rap</span>
+                <span class="skill-bar">
+                    <span class="skill-level skill-rap">90%</span>
+                </span>
+            </li>
+            <li>
+                <span class="skill-name">Dance</span>
+                <span class="skill-bar">
+                    <span class="skill-level skill-dance">85%</span>
+                </span>
+            </li>
+            <li>
+                <span class="skill-name">TeamWork</span>
+                <span class="skill-bar">
+                    <span class="skill-level skill-tw">100%</span>
+                </span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

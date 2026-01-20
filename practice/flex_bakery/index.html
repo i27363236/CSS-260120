@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Index</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            font-family: "Chocolate Classical Sans","Jost", sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+        header{
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid gray;
+        }
+        .logo img {
+            width: 80px;
+        }
+        ol{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ol li {
+            width: 100px;
+            height: 70px;
+            /* background-color: rgb(255, 215, 222); */
+            /* border-radius: 5%; */
+        }
+        .nav-link {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            /* color: gray; */
+        }
+        ol li:hover {
+            background-color:firebrick;
+        }
+        .nav-link:hover{
+            color: white;
+        }
+
+        /* section */
+        section{
+            width: 60%;
+            margin: auto;
+            padding: 50px 0 50px 0;
+        }
+        h2{
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 10px 0 10px 0;
+        }
+        table{
+            /* display: flex; */
+            /* justify-content: center; */
+            width: 80%;
+            margin: auto;
+        }
+        table tr td{
+            height: 50px;
+            border-bottom: 1px dotted #333;
+        }
+        .product{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .card{
+            width: 28%;
+            /* height: 200px; */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            padding: 10px;
+        }
+        .card img{
+            width: 100%;
+            height: 95%;
+        }
+        .card:nth-child(1){
+            background-color:thistle;
+        }
+        .card:nth-child(2){
+            background-color:lemonchiffon;
+        }
+        .card:nth-child(3){
+            background-color: lightblue;
+        }
+        .text{
+            padding: 5px;
+            color: #333;
+            height: 5%;
+        }
+
+        footer{
+            /* display: flex; */
+            width: 100%;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./img/logo.png" alt=""></div>
+        <nav>
+            <ol>
+                <li><a class="nav-link" href="">最新消息</a></li>
+                <li><a class="nav-link" href="">產品介紹</a></li>
+                <li><a class="nav-link" href="">聯絡我們</a></li>
+            </ol>    
+        </nav>
+    </header>
+
+    <section>
+        <h2>最新消息</h2>
+        <table>
+            <tr>
+                <td>2023-06-23</td>
+                <td>新品上市，優惠7折</td>
+            </tr>
+            <tr>
+                <td>2023-05-30</td>
+                <td>預定生日蛋糕送好禮</td>
+            </tr>
+            <tr>
+                <td>2023-05-01</td>
+                <td>母親節蛋糕特惠中</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>產品分類</h2>
+        <div class="product">
+            <div class="card">
+                <div><img src="./img/cake-cover.jpg" alt=""></div>
+                <div class="text">蛋糕</div>
+            </div>
+            <div class="card">
+                <div><img src="./img/bread.jpg" alt=""></div>
+                <div class="text">麵包</div>
+            </div>
+            <div class="card">
+                <div><img src="./img/dessert.jpg" alt=""></div>
+                <div class="text">甜點</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>Copyright &copy; 2026</footer>
+</body>
+</html>

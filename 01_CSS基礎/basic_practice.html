@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課堂練習</title>
+
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        .title{
+            font-size: 20px;
+            color: tomato;
+        }
+        .item {
+            font-family: arial;
+        }
+        #News>a{
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            width: 100px;
+            height: 50px;
+        }
+        p {
+            letter-spacing: 3px;
+            /* 文字間距 */
+        }
+        .box1, .box2, .box3 {
+            height: 50px;
+            width: 200px;
+            background-color: lightblue;
+            border: 1px dashed aliceblue;
+            text-align: center;
+            line-height: 50px;
+            color: #f00;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="title">網站上線囉</div>
+    <p>精選豬肉，經過慢火烤製，配上香甜的蜜汁醬汁，口感鮮嫩多汁。</p>
+    <p>新鮮的大蝦，配上香料和奶油焗製，搭配脆皮麵包，口感鮮美。</p>
+    <p>新鮮的意大利面搭配特製醬汁和香料，絕對是一道美味的主菜。</p>
+    <ul>
+        <li class="item">About</li>
+        <li class="item">Menu</li>
+        <li class="item">Contact</li>
+    </ul>
+    <ul>
+        <li>產品介紹
+            <ul class="submenu">
+                <li>蛋糕</li>
+                <li>麵包</li>
+                <li>甜點</li>
+            </ul>
+        </li>
+        <li>
+            最新消息
+        </li>
+        <li>
+            製作過程
+        </li>
+    </ul>
+    <div id="News">
+        <a href="#">新的美食節目即將開播</a>
+        <a href="#">新的菜單已經推出</a>
+        <a href="#">母親節特惠</a>
+    </div>
+    <div class="box1">蛋糕</div>
+    <div class="box2">麵包</div>
+    <div class="box3">甜點</div>
+</body>
+
+</html>
